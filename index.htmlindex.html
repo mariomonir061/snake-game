@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modern Snake Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div>
+        <div class="title">Snake</div>
+        <div class="subtitle">Use arrows or WASD to move</div>
+      </div>
+      <div class="score-box">
+        <div class="score-label">Score</div>
+        <div class="score-value" id="score">0</div>
+        <div class="best-score" id="bestScore">Best: 0</div>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="game" width="400" height="400"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="overlay-title" id="overlayTitle">Game Over</div>
+        <div class="overlay-text" id="overlayText"></div>
+        <button class="btn" id="restartBtn">Play again</button>
+      </div>
+    </div>
+
+    <div class="controls-hint">
+      <div class="pill">⭠ ⭡ ⭢ ⭣ or W A S D</div>
+      <div class="pill">Press any key to start</div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
